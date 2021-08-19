@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="style.css" rel="stylesheet">
+    <title>Music</title>
+</head>
+<body>
+    <!---------------------- START HEADER ------------------------>
+    <div class="header z-10">
+        <nav class="bg-black top-0 py-2 md:py-4">
+          <div class="container px-4 mx-auto md:flex md:items-center">
+            <div class="flex justify-between items-center">
+              <a href="#" class="font-bold text-xl text-white">FWR</a>
+              <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <div class="shift hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+              <a href="#piano" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded bg-blue-400">Let's PLAY</a>
+              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About</a>
+              <a href="#products" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Products</a>
+              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</a>
+              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Wishlist</a>
+              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-blue-400 font-bold text-center border border-transparent rounded hover:bg-blue-400 hover:text-indigo-700 transition-colors duration-300">Account</a>
+              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-blue-400 font-bold text-center border border-solid border-blue-400 rounded hover:bg-blue-400 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Cart</a>
+            </div>
+          </div>
+        </nav>
+    </div>
+    <!---------------------- START SEARCH BAR------------------------>
+<!-- 
+        <div class="shadow flex justify-center bg-black">
+            <input class="w-4/5 my-1 rounded p-2" type="text" placeholder="Search...">
+            <button class="bg-transparent w-auto flex justify-end items-center text-blue-400 p-2 hover:text-gray-900">
+                <i class="material-icons">search</i>
+            </button>
+        </div> -->
+    <!---------------------- START BANNER ------------------------>
+        <div class="bg-black bg-contain py-6 md:py-12">
+          <div class="title">
+            <h1 data-text="PLAY SOME MUSIC"><span>PLAY SOME MUSIC</span></h1>
+            </div>
+        </div>
+        <div class="flex relative justify-center items-center bg-black h-60 overflow-hidden md:h-96">
+          <img class="product bg-gif" src="blank">  
+          <div class="flex relative">
+                <button onclick="jsNota(138.591)" class="white-key C4-key"></button>
+                <button onclick="jsNota(146.832)" class="black-key Db4-key"></button>
+                <button onclick="jsNota(155.563)" class="white-key D4-key"></button>
+                <button onclick="jsNota(164.814)" class="black-key Eb4-key"></button>
+                <button onclick="jsNota(174.614)" class="white-key E4-key"></button>
+                <button onclick="jsNota(184.997)" class="white-key F4-key"></button>
+                <button onclick="jsNota(195.998)" class="black-key Gb4-key"></button>
+                <button onclick="jsNota(207.652)" class="white-key G4-key"></button>
+                <button onclick="jsNota(220.000)" class="black-key Ab4-key"></button>
+                <button onclick="jsNota(233.082)" class="white-key A4-key"></button>
+                <button onclick="jsNota(246.942)" class="black-key Bb4-key"></button>
+                <button onclick="jsNota(261.626)" class="white-key B4-key"></button>
+                <button onclick="jsNota(277.183)" class="white-key C5-key"></button>
+                <button onclick="jsNota(293.665)" class="black-key Db5-key"></button>
+                <button onclick="jsNota(311.127)" class="white-key D5-key"></button>
+                <button onclick="jsNota(329.628)" class="black-key Eb5-key"></button>
+                <button onclick="jsNota(349.228)" class="white-key E5-key"></button>
+            </div>
+        </div>
+    <!---------------------- START PRODUCTS ------------------------>
+    <div class="bg-black bg-contain py-6 md:py-12">
+      <div class="container px-4 mx-auto">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl text-white md:text-4xl font-medium mb-2">MIDI CONTROLLER. 1092</h1>
+          <button class="bg-blue-400 text-white py-2 px-6 rounded-full text-xl mb-16">BUY IT</button>
+           <h1 class="text-3xl text-white md:text-4xl font-medium mb-2">PRODUCTS</h1>
+        </div>
+      </div>
+    </div>
+    <section class="flex bg-black gap-0 flex-wrap justify-center">
+          <div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+              <div class="px-4 py-2">
+              <h1 class="text-gray-900 font-bold text-3xl uppercase">PARTY</h1>
+              <p class="text-gray-600 text-sm mt-1">We make parties that you will never forget, they are a unique experience, music, dance and lights. But it now. More information.</p>
+              </div>
+              <img class="product">
+              <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+              <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+              <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+              </div>
+          </div>
+          <div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+            <div class="px-4 py-2">
+            <h1 class="text-gray-900 font-bold text-3xl uppercase">OUTDOOR</h1>
+            <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+            <img class="product">
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+            <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+            </div>
+          </div><div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+            <div class="px-4 py-2">
+            <h1 class="text-gray-900 font-bold text-3xl uppercase">TRAVEL</h1>
+            <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+            <img class="product">
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+            <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+            </div>
+          </div><div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+            <div class="px-4 py-2">
+            <h1 class="text-gray-900 font-bold text-3xl uppercase">LEARN</h1>
+            <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+            <img class="product">
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+            <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+            </div>
+          </div><div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+            <div class="px-4 py-2">
+            <h1 class="text-gray-900 font-bold text-3xl uppercase">MUSIC</h1>
+            <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+            <img class="product">
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+            <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+            </div>
+            </div>
+          <div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+            <div class="px-4 py-2">
+            <h1 class="text-gray-900 font-bold text-3xl uppercase">VIDEO</h1>
+            <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+            </div>
+            <img class="product">
+            <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+            <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+            <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+            </div>
+            </div>
+          <div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+              <div class="px-4 py-2">
+              <h1 class="text-gray-900 font-bold text-3xl uppercase">NIKE AIR</h1>
+              <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+              </div>
+              <img class="product">
+              <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+              <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+              <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+              </div>
+          </div>
+          <div class="w-48 bg-white shadow-lg rounded-lg overflow-hidden m-10">
+              <div class="px-4 py-2">
+              <h1 class="text-gray-900 font-bold text-3xl uppercase">NIKE AIR</h1>
+              <p class="text-gray-600 text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos quidem sequi illum facere recusandae voluptatibus</p>
+              </div>
+              <img class="product">
+              <div class="flex items-center justify-between px-4 py-2 bg-gray-900">
+              <h1 class="text-gray-200 font-bold text-xl">$129</h1>
+              <button class="px-3 py-1 bg-gray-200 text-sm text-gray-900 font-semibold rounded">Add to card</button>
+              </div>
+          </div>
+        
+    </section>
+
+<!---------------------- START MUSIC EVENTS ------------------------>
+           <div class="container-product">
+            <h1 class="text-3xl text-white md:text-4xl font-medium mb-2">EVENTS</h1>
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img img class="event" src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img  class="event" src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img class="event"  src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+            </label>
+          </div>
+        </div>
+
+    <!---------------------- START FOOTER ------------------------>
+    <footer class="footer-1 bg-black text-white py-8 sm:py-12">
+        <div class="container mx-auto px-4">
+          <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="text-xl font-bold mb-6">Support</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Repairs</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Rent</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Shipping</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Returns</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms & conditions</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">My account</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+              <h5 class="text-xl font-bold mb-6">About Us</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Work for us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact us</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+              <h5 class="text-xl font-bold mb-6">Help</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Payment Options</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+              <h5 class="text-xl font-bold mb-6">Get in touch</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#">Be the first to know about new products and trends, and have access to exclusive offers.</a>
+                </li>
+                <input class="rounded p-2 md:w-36" type="text" placeholder="Email">
+                <button class="px-4 py-1 bg-gray-400 hover:bg-blue-300 rounded text-black font-bold mt-2">Get Started</button>
+              </ul>
+            </div>
+            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+              <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
+              <div class="flex sm:justify-center xl:justify-start">
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+              <div class="mt-4">
+                <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Payment Methods</h5>
+                <div class="flex sm:justify-center xl:justify-start">
+                  <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </div>
+            </div>
+            
+          </div>
+         
+            <div class="container mx-auto px-6">
+                <div class="mt-6 border-t-2 border-gray-300 flex flex-col items-center">
+                    <div class="text-center py-6">
+                        <p class="text-sm text-white font-bold ">
+                             © 2021 by Daniela Ospina Sarmiento>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+<script src="index.js">
+</script>
+
+</body>
+</html>
