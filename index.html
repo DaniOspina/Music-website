@@ -13,7 +13,7 @@
 <body>
     <!---------------------- START HEADER ------------------------>
     <div class="header z-10">
-        <nav class="bg-black top-0 py-2 md:py-4">
+        <nav class="bg-black py-2 md:py-4">
           <div class="container px-4 mx-auto md:flex md:items-center">
             <div class="flex justify-between items-center">
               <a href="#" class="font-bold text-xl text-white">FWR</a>
@@ -23,7 +23,7 @@
             </div>
             <div class="shift hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
               <a href="#piano" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded bg-blue-400">Let's PLAY</a>
-              <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">About</a>
+              <a href="#events" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Events</a>
               <a href="#products" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Products</a>
               <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Contact</a>
               <a href="#contact" class="p-2 lg:px-4 md:mx-2 text-white font-bold rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">Wishlist</a>
@@ -33,17 +33,9 @@
           </div>
         </nav>
     </div>
-    <!---------------------- START SEARCH BAR------------------------>
-<!-- 
-        <div class="shadow flex justify-center bg-black">
-            <input class="w-4/5 my-1 rounded p-2" type="text" placeholder="Search...">
-            <button class="bg-transparent w-auto flex justify-end items-center text-blue-400 p-2 hover:text-gray-900">
-                <i class="material-icons">search</i>
-            </button>
-        </div> -->
     <!---------------------- START BANNER ------------------------>
         <div class="bg-black bg-contain py-6 md:py-12">
-          <div class="title">
+          <div id="piano" class="title">
             <h1 data-text="PLAY SOME MUSIC"><span>PLAY SOME MUSIC</span></h1>
             </div>
         </div>
@@ -75,7 +67,7 @@
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-3xl text-white md:text-4xl font-medium mb-2">MIDI CONTROLLER. 1092</h1>
           <button class="bg-blue-400 text-white py-2 px-6 rounded-full text-xl mb-16">BUY IT</button>
-           <h1 class="text-3xl text-white md:text-4xl font-medium mb-2">PRODUCTS</h1>
+           <h1 id="products" class="text-3xl text-white md:text-4xl font-medium mb-2">PRODUCTS</h1>
         </div>
       </div>
     </div>
@@ -169,7 +161,7 @@
     </section>
 
 <!---------------------- START MUSIC EVENTS ------------------------>
-           <div class="container-product">
+           <div id="events" class="container-product">
             <h1 class="text-3xl text-white md:text-4xl font-medium mb-2">EVENTS</h1>
             <input type="radio" name="slider" id="item-1" checked>
             <input type="radio" name="slider" id="item-2">
@@ -188,7 +180,7 @@
         </div>
 
     <!---------------------- START FOOTER ------------------------>
-    <footer class="footer-1 bg-black text-white py-8 sm:py-12">
+    <footer id="contact" class="footer-1 bg-black text-white py-8 sm:py-12">
         <div class="container mx-auto px-4">
           <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
             <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
@@ -272,7 +264,7 @@
                 <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Payment Methods</h5>
                 <div class="flex sm:justify-center xl:justify-start">
                   <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
-                    <i class="fab fa-facebook"></i>
+                    <i class="fa-solid fa-money-bill-wave"></i>
                   </a>
                   <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
                     <i class="fab fa-twitter"></i>
@@ -289,7 +281,8 @@
                 <div class="mt-6 border-t-2 border-gray-300 flex flex-col items-center">
                     <div class="text-center py-6">
                         <p class="text-sm text-white font-bold ">
-                             © 2021 by Daniela Ospina Sarmiento>
+                             © 2021 by Daniela Ospina Sarmiento
+                             <a href="https://github.com/DaniOspina"target="blank"><i class="fab fa-github"></i></a>
                         </p>
                     </div>
                 </div>
